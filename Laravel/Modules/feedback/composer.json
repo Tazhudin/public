@@ -1,0 +1,12 @@
+{
+  "name": "darkstore/feedback",
+  "version": "1.0.0",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "autoload": {
+    "psr-4": {
+      "Feedback\\": "src/"
+    }
+  }
+}

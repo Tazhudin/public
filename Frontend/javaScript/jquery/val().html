@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+	<title></title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>	
+		<script type="text/javascript">
+		function getValText()
+		{
+			var text = $("#inpText").val();
+
+			$("#resultMassege").css("display","block");
+			$("#resultMassege").append("<br>"+text);
+		}
+
+	</script>
+</head>
+<body>
+
+
+
+<form>
+	<input type="text" name="inText" id="inpText">
+	<input type="button" name="btn1" value="show" onclick="return getValText()">
+
+</form>
+<p id="resultMassege" style="display: none">выше набрано было:</p>
+</body>
+</html>

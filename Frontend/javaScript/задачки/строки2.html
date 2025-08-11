@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>string</title>
+</head>
+<body>
+	<div class="somediv">
+		<input class="" type="text" id="str1">
+		<input class="" type="text" id="substr1">
+		<br>
+		<input class="buttons" type="button" value="найти" id="searchStr">
+		<input class="buttons" type="button" value="удалить" id="delSubStr">
+		<input class="buttons" type="button" value="именить" id="replaceSbsimbole">
+	</div>
+
+	<style type="text/css">
+		.somediv{
+			padding: 10px;
+		}
+		.somediv .buttons{
+			margin: 10px auto;
+			padding: 5px;
+		}
+	</style>
+
+
+
+	<script type="text/javascript">
+		var str1= document.querySelector('#str1');
+		var subStr2= document.querySelector('#substr1');
+		var searchSubStr=document.querySelector('#searchStr');
+		var delSubStr=document.querySelector('#delSubStr');
+		var replaceSbsimbole=document.querySelector('#replaceSbsimbole');
+		var startI=0;
+		var endI=0;
+		var k=0;
+			searchSubStr.onclick=function(){
+				console.log(str1.value);
+				console.log(subStr2.value);
+			}
+
+			delSubStr.onclick=function(){
+				for(i in str1){
+					if(str1[i]==subStr2[0])
+					{
+						k=i;
+						for(j in subStr2)
+						{
+							if(str1[k]==subStr2[j])
+							{
+								startI=j;
+								console.log(str1.value,subStr2.value)
+								k++;
+							}
+							else {break; k=0;}
+						}
+					}
+				}
+				console.log(str1.value);
+				console.log(subStr2.value);
+			}
+
+			replaceSbsimbole.onclick=function(){
+				console.log(str1.value);
+				console.log(subStr2.value);
+			}
+
+		
+
+
+
+	</script>
+</body>
+</html>

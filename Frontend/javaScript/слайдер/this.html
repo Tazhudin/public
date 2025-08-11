@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>this</title>
+</head>
+<body>
+	<dir class="items">
+		<div class="item">
+			111111
+		</div>
+		
+	</dir>
+	<input type="button" name="btn" class="btn1" value="скрипт">
+
+
+	<style type="text/css">
+		.items{
+			background-color: grey;
+			width: 200px;
+			height: 100px;ss
+			padding: 10px;
+			margin:0 auto;
+		}
+		.item{
+			background-color: red;
+			width: 150px;
+			height: 50px;
+			margin:0 auto;
+		}
+	.btn1{
+		display: inline;
+		margin-left: 47%;
+	}
+
+	</style>
+	<script type="text/javascript">
+		var items=document.querySelector('.items');
+		var item=document.querySelector('.item');
+		var btn1 =document.querySelector('.btn1');
+		btn1.onclick=function () {
+			alert(this)
+		}
+
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<title></title>
+</head>
+<body>
+	<div style="color: pink" style="width: 300px" id="div_0"></div>
+	<div style="color: red" style="width: 300px" id="div_1"></div>
+	<div style="color: green" style="width: 300px" style="display: none" id="div_2"></div>
+
+
+
+	<script type="text/javascript">
+		$("#div_1").append("<pre>Я памятник себе воздвиг нерукотворный,<br>К нему не зарастет народная тропа,<br>Вознесся выше он главою непокорной<br> Александрийского столпа.</pre>");
+
+		$("pre").appendTo($("#div_2"));					 // добавляет в конец
+	    
+
+	    $("<p>текст встав-й с prependTo в 1-й div</p>").prependTo($("#div_1")); 												//добавляет в начало
+	
+	    $("<p>текст встав-й с insertBefore перед  0-м div</p>").insertBefore($("#div_0"))
+	      $("<p>текст встав-й с insertAfter после  0-гo div</p>").insertAfter($("#div_0"))
+
+
+
+	</script>
+
+</body>
+</html>

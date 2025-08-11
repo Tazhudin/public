@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Math.random</title>
+</head>
+<body>
+	<script type="text/javascript">	
+			document.write(Math.random() + "<br>");
+
+
+							//Использование Math.round() даст неравномерное распределение!
+				function getRandomInt(min, max) {
+					return Math.floor(Math.random() * (max - min + 1)) + min;
+				};
+			document.write(getRandomInt(10,100));
+			document.write("<br>");
+
+				function getRandomfloat(min, max) {
+					return Math.random() * (max - min) + min;
+				};
+			document.write(getRandomfloat(10,100));
+			document.write("<br>");
+
+			document.write("############################################################# <br>");
+			var array1=[];
+			var index=0
+			while(index<10)
+			{
+				array1[index]=getRandomInt(10, 15);
+				document.write(array1[index]+"<br>");
+				index++;
+			}
+
+
+
+	</script>
+</body>
+</html>

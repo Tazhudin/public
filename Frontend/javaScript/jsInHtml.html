@@ -1,0 +1,51 @@
+<!DOCTYPE­html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<style>
+			/*­Стил­и­CSS­для­этой­стран­иц­ы­*/
+			.reveal­* 
+			{­
+				display:­none;­
+				}­­­­­­­­­
+			.reveal­*.handle­
+			{­
+				display:­block;
+				}­­
+			</style>
+
+
+			<script>
+						//­Нич­ег­о­не­дел­ать,­пок­а­док­ум­ент­не­буд­ет­заг­руж­ен­полн­ос­тью
+					window.onload­=­function()­
+					{
+						­­­­    //­Отыс­кать­все­конт­ейн­ерн­ые­элем­ент­ы­с­класс­ом­"reveal"
+						­­­­var­ elements­=­document.getElementsByClassName("reveal");
+						­­­­for(var­i­=­0;­i­<­elements.length;­i++)­
+							{­//­Для­каж­д­ог­о­так­ог­о­элем­ент­а...
+								­­­­­­­­var­ elt­=­elements[i];
+								­­­­­­­­    //­Отыс­кать­элем­ент­ы­с­класс­ом­"handle"­в­конт­ейн­ер­е
+								­­­­­­­­var­ title­=­elt.getElementsByClassName("handle") [0];
+								­­­­­­­­    //­Пос­ле­щелчк­а­на­этом­элем­ент­е­сдел­ать­вид­им­ым­ост­альн­ое­сод­ерж­им­ое­
+								­­­­­­­­addRevealHandler(title,­elt);
+							­­­­}
+						­­­­
+						­­­­function­­addRevealHandler(title,­elt)­
+							{
+								­­­­­­­­title.onclick­=­function()­
+								{
+									­­­­­­­­­­­­if­ (elt.className­==­"reveal")­elt.className­=­"revealed";
+									­­­­­­­­­­­­else­ if­(elt.className­==­"revealed")­elt.className­=­"reveal";
+								
+								}
+						­­­­­­­­­­­­    }
+					};
+			</script>
+		</head>
+	<body>
+		<div­class="reveal">
+		<h1­class="handle">Щелкн­ит­е­ здесь,­чтоб­ы­ увид­еть­ скрыт­ый­ текст</h1>
+		<p>Этот­ абз­ац­ не в­ид­им.­ Он­ поя­вл­яе­тс­я­ пос­ле­ щелчк­а­ на­ заг­ол­овк­е.</p>
+		</div>
+	</body>
+</html>

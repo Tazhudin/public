@@ -1,0 +1,200 @@
+[class^="swiper-button-"] {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+/*.swiper-slide {*/
+/*  backface-visibility: hidden;*/
+/*  -webkit-backface-visibility: hidden;*/
+/*}*/
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper-container {
+  width: 79%;
+  height: 98vh;
+  float: left;
+  -webkit-transition: opacity .6s ease, -webkit-transform .3s ease;
+  transition: opacity .6s ease, -webkit-transform .3s ease;
+  transition: opacity .6s ease, transform .3s ease;
+  transition: opacity .6s ease, transform .3s ease, -webkit-transform .3s ease;
+}
+.swiper-container.nav-slider {
+  width: 20%;
+  padding-left: 0.3%;
+}
+.swiper-container.nav-slider .swiper-slide {
+  cursor: pointer;
+  opacity: .7;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}
+.swiper-container.nav-slider .swiper-slide.swiper-slide-active {
+  text-shadow: 1px 1px #bd3636;
+  opacity: 1;
+  border: 3px solid #7c0d0d;
+
+}
+.swiper-container.nav-slider .swiper-slide .content {
+  width: 100%;
+}
+.swiper-container.nav-slider .swiper-slide .content .title {
+  font-size: 1.5em;
+}
+.swiper-container:hover .swiper-button-prev,
+.swiper-container:hover .swiper-button-next {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+.swiper-slide .slide-bgimg {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 98%;
+  height: 96%;
+  background-position: center;
+  background-size: cover;
+  margin: 1%;
+}
+.swiper-slide .entity-img {
+  display: none;
+}
+.swiper-slide .content {
+  margin-top: 13%;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 90%;
+  padding-left: 9%;
+  color: #151414;
+}
+.swiper-slide .content .title {
+  font-size: 2.6em;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.swiper-slide .content .caption {
+  display: block;
+  font-size: 2em;
+  line-height: 1;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  opacity: 0;
+  -webkit-transition: opacity .3s ease, -webkit-transform .7s ease;
+  transition: opacity .3s ease, -webkit-transform .7s ease;
+  transition: opacity .3s ease, transform .7s ease;
+  transition: opacity .3s ease, transform .7s ease, -webkit-transform .7s ease;
+}
+.swiper-slide .content .caption.show {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+  text-shadow: -1px 2px 0px #dbd9d9, 0 1px 1px #db2525, -1px 0 1px #da6969, 0 -1px 1px #c12f2f;
+  background-color:rgba(255,255,255,0.5);
+  border-radius: 10px;
+  /*padding: 1%;*/
+
+}
+.textAnimation{
+
+}
+
+[class^="swiper-button-"] {
+  width: 50%;
+  opacity: 0;
+  /*visibility: hidden;*/
+}
+
+.swiper-button-prev {
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+}
+
+.swiper-button-next {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+}
+
+
+
+
+.swiper-slide-active  img{
+  display: none;
+}
+
+body{
+  padding: 0.5%;
+  background-color: #4c0d02;
+}
+.swiper-container, .main-slider {
+  margin-right: 0.3%;
+}
+.nav-slider swiper-wrapper {
+  margin-bottom: 3%;
+}
+
+
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  width: 90%;
+  left: 5%;
+  margin-top: -87.5px;
+  font-size: 30px;
+  height: 175px;
+}
+
+.wave {
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2), 0 16px 28px rgba(0,0,0,0.2);
+  text-shadow: -1px 2px 0px #dbd9d9, 0 1px 1px #db2525, -1px 0 1px #da6969, 0 -1px 1px #c12f2f;
+  color: #4d0606 !important;
+  /*animation: 0.5s color infinite ease-in-out;*/
+}
+
+@keyframes color {
+  50% {
+    color: #8fc8ae;
+  }
+}
+
+.animated-word {
+  position: absolute;
+  z-index: 100;
+  width: 5%;
+  margin: 1.5%;
+  margin-bottom: 0;
+  background-color: #3e0505;
+  padding: 0;
+  opacity: 1;
+  letter-spacing: 0.4em;
+  text-shadow: 4px 1px #570505;
+  font-weight: 600;
+  font-size: 2em;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  max-width: 21%;
+  outline: 5px solid;
+  outline-color: #630909;
+  outline-offset: 5px;
+  transition: all 600ms
+}
+
+.animated-word:hover {
+  color: rgba(71, 126, 232, 0.7);
+  outline-color: rgba(71, 126, 232, 0);
+  outline-offset: 300px;
+}
+

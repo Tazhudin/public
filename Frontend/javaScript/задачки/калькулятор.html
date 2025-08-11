@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>calculaiter</title>
+</head>
+<body>
+	
+
+	<script type="text/javascript">
+		var a=prompt("input a ");
+		var b=prompt("input b ");
+		var operation = prompt("input: [1 for +] [2 for -] [3 for *][]	4 for /]");
+		var res=0;
+
+		switch(operation){		 
+		    case 1 : 
+		    	res=a+b;
+		        console.log(res);
+		        break;
+		    case 2 : 
+		    	res=a-b
+		        console.log("разность равен = " , res );
+		        break;
+		    case 3 : 
+		    	res= a*b
+		        console.log("произведение равно = " , res);
+		        break;
+		    case 4 : 
+		    	res= a/b
+		        console.log("отношение равно = " , res);
+		        break;
+		}	
+
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>calc</title>
+</head>
+<body>
+	<div class="calc">
+		<input name="nam1" type="text">
+		<input name="sum" type="button" value="+">
+		<input name="dif" type="button" value="-">
+		<input name="mult" type="button" value="*">
+		<input name="div" type="button" value="/">
+		<input name="nam2" type="text">
+		
+		<span class="res">=  </span>
+
+		<style type="text/css">
+			.res{
+				width: 50px;
+				height: 10px;
+				background-color: #ab9696;
+				margin: 10px;
+				padding: 2px;
+				padding-right: 50px;
+				border: 1px solid red;
+			}
+		</style>
+
+		<script type="text/javascript">
+
+			
+						var nam1=document.querySelector('input[name=nam1]');
+						var nam2=document.querySelector('input[name=nam2]');
+						var sum=document.querySelector('input[name=sum]');
+						var dif=document.querySelector('input[name=dif]');
+						var mult=document.querySelector('input[name=mult]');
+						var div=document.querySelector('input[name=div]');
+						var res=document.querySelector('.res');
+
+						sum.onclick=function () {
+							res.innerHTML= parseInt(nam1.value) + parseInt(nam2.value);
+							this.disabled= "true";
+						}
+						dif.onclick=function () {
+							res.innerHTML= parseInt(nam1.value) - parseInt(nam2.value);
+					sum.disabled="false";
+						}
+						mult.onclick=function () {
+							res.innerHTML= parseInt(nam1.value) * parseInt(nam2.value);
+							this.disabled= "true";
+						}
+						div.onclick=function () {
+							res.innerHTML= parseInt(nam1.value) / parseInt(nam2.value);
+							this.disabled= "true";
+						}
+						nam1.onChange=function(){
+							sum.disabled="false";
+							dif.disabled="false";
+							mult.disabled="false";
+							div.disabled="false";
+						}
+
+
+			
+
+
+
+
+
+
+
+
+
+
+		</script>
+
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+<body>
+	<div id="Block_1">Some Block</div>
+
+
+
+	<script type="text/javascript">
+		$("#Block_1").css("background-color","yellow");
+		$("#Block_1").css("color","red");
+		$("#Block_1").css("width","300px");
+		$("#Block_1").css("height",function(){
+			return $(this).width();
+		});
+
+	</script>
+
+</body>
+</html>

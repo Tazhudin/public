@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Выбор элементов документа
+</title>
+</head>
+<body>
+
+
+	<script type="text/javascript">
+		/*
+Выбрать элемент или элементы документа можно:
+•  по значению атрибуа id;
+•  по значению атрибута name;
+•  по имени тега;
+•  по имени класса или классов CSS; или
+•  по совпадению с определенным селектором CSS.
+
+Выбор элементов по атрибутам 
+		var­ section1­=­document.getElementById("section1");
+		var­ radiobuttons­=­document.getElementsByName("radiobuttons­_name");
+		var­ spans­=­document.getElementsByTagName("span");
+		var­ warnings­ =­ document.getElementsByClassName("warning");
+		 document.body представляет элемент <body> 
+		 document.head представляет элемент <head>
+
+досуп к атрибутам
+	hasAttribute() проверяет присутствие атрибута с указанным именем, 
+	removeAttr­ibute() удаляет атрибут.
+	getAttribute() 
+	setAttribute()
+		var­image­=­document.images[0];
+		var­width­=­parseInt(image.getAttribute("WIDTH"));
+		image.setAttribute("class",­"thumbnail");
+
+Выбор элементов по селекторов CSS
+
+
+NodeL­ist:
+	getElementsByName()  
+	getElementsByTagName()
+	getElementsByClassName()
+	querySelectorAll()	\\все элементы соответствующие селектору.
+	querySelector() первый...
+
+
+HTMLCollection:
+	document.images 
+	document.forms
+	embeds
+	plugins
+	scripts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ПРОЧЕЕ
+	HTML-атрибуты как свойства объектов Element
+		Чтобы  преобразовать  имя  атрибута в имя свойства в языке Java Script, его нужно записать символами в нижнем регистре. Однако, если имя атрибута состо ит из более чем одого слова, первый символ каждого слова, кроме первого, за писывается в вернем регистре, например:defaultChecked и tabIndex.
+
+			var­ image­=­document.getElementById("myimage");
+			var­ imgurl­=­image.src;­ 		//­Атр­иб­ут­ src­ опр­ед­ел­яе­т­ URL-адр­ес­изоб­раж­ен­ия
+			image.id­===­"myimage"­­ 		//­Пот­ом­у­ что­ пои­ск­ элем­ент­а­ вып­олн­ялс­я­ по­ id
+	
+	var­ f­=­document.forms[0];­­­­­­­­­­­­­­­­­­­­­­  			//­ Перв­ый­элем­ент­<form>­в­док­ум­ент­е
+
+
+	получить содержимое элемента в виде простого текста
+		var­ para­=­document.getElementsByTagName("p")[0];­//­Перв­ый­<p>­в­ док­ум­ент­е
+		var­ text­=­para.textContent;­­­­­­­­­­­­­­­­­­­­­­ 				//­Текст­"This­is­a­simple­document."
+		para.textContent­=­"Hello­World!";­­­­­­­ 		//­Изм­ен­ит­ сод­ерж­им­ое­ абз­ац­а
+			или
+		var­ para­=­document.getElementsByTagName("p")[0];­ //­Перв­ый­ <p>­в­ док­ум­ент­е
+		var­ text­=­para.innerText;­­­­­­­­­­­­­­­­­­­­­­ 				 //­Текст­" This­is­a­simple­document."
+		para.innerText=­"Hello­World!";­­­­­­­ 		//­Изм­ен­ит­ сод­ерж­им­ое­ абз­ац­а
+
+
+
+
+
+
+
+
+		*/
+
+
+
+
+
+	</script>
+
+</body>
+</html>

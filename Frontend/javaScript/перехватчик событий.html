@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>перехватчик событий</title>
+</head>
+<body>
+<form>
+		<input type="button" name="" id="inputDate">
+
+</form>
+<script type="text/javascript">
+	var inputBut = document.getElementById("inputDate");
+								inputBut.addEventListener // перехватчик событий  !!!
+								(	"click", 
+									function()
+										{
+											alert("привет !!! Это перехватчик событий !");
+										},
+								 	false
+								)
+
+	
+</script>
+
+
+</body>
+</html>

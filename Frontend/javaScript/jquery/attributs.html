@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>attributs</title>
+	<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+
+<body>
+	<div class="somdiv1" title="thisDiv">
+		div for get attr
+		<br>
+		result:
+	</div>
+
+	<style type="text/css">
+		body {
+			background-color: #5a7c5b;
+		}
+
+		.somdiv {
+			background-color: #b44343;
+			display: inline;
+			width: 100px;
+			height: 50px;
+			padding: 5px;
+			margin: 10 auto;
+		}
+	</style>
+
+
+	<script type="text/javascript">
+		var text = $('.somdiv1').text();
+		var attr = $('.somdiv1').attr('title');
+		$('.somdiv1').text(text + attr);
+	</script>
+	console.log(attr);
+
+
+</body>
+
+</html>

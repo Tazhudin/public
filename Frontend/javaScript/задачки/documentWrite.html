@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+
+	<script type="text/javascript">
+		var index=0
+		while(index<10)
+		{
+			document.write(index+"<br>");
+			index++;
+		}
+
+
+
+		var obj = {
+				'Минск': 'Беларусь',
+				'Москва': 'Россия',
+				'3': 'china',
+				'Киев': 'Украина'
+					};
+			for(index in obj)
+			{
+				document.write(index +" => ")
+				document.write(obj[index]+"<br>")
+			}
+
+
+
+	</script>
+</body>
+</html>

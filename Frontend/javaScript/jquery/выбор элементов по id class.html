@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<title>выбор элементов по id class </title>
+</head>
+	<body>
+			<div class="test_cls1">див11	</div>
+			<div class="test_cls1">див12	</div>
+			<div class="test_cls1">див13 </div>
+			<div class="test_cls1">див13	</div>
+			
+			<p   id="test_p_id1">параграф 1	</p>
+			
+			<div class="test_cls2">див21	</div>
+			<div class="test_cls2">див22	</div>
+			
+			<pre>				
+								Чудесный жребий совершился:
+								Угас великий человек.
+								В неволе мрачной закатился
+								Наполеона грозный век.
+								Исчез властитель осужденный,
+								Могучий баловень побед,
+								И для изгнанника вселенной
+								Уже потомство настает.
+			</pre>
+
+			<img src="#" alt="изображение">
+
+			<h4>зоголовок 4</h4>
+
+			<script type="text/javascript">
+				var test_div_class1=$('.test_cls1 ');//выбор элементов по классу
+
+				for (var i = 0; i < test_div_class1.length; i++) {
+					test_div_class1.get(i).style.color="green";
+				}
+
+
+				var p1=$('#test_p_id1');//выбор  ;элементов по id
+					
+				var divs=$('div');// выбор по тегу
+					
+				var img=$('img[alt]');//выбор по тегу с трибутом 
+
+
+				alert("всего div на сайте = "+divs.length + "	изобр с alt="+img.length);
+
+
+
+				
+
+						
+			</script>
+	</body>
+</html>

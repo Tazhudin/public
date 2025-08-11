@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>выборкас jquery</title>
+	<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+<body>
+
+	<div class="item1">
+		<div id="d1"></div>
+		<img src="img/1.jpg" alt="">
+		<div date-forSelect="someDate"></div>
+
+	</div>
+	<div class="item2">
+		AAADDDD
+
+	</div>
+	<div class="item3">
+		
+
+	</div>
+<style type="text/css">
+	body{
+		background-color: grey;
+	}
+	div{
+		margin: 10px;
+		padding: 10px;
+		color: red;
+	}
+	#d1{
+		width: 50%;
+		height: 20PX;
+		background-color: yellow;
+	}
+	item1
+
+
+
+</style>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#d1").click(function(){$("#d1").css({'background-color':'red'});})		
+			$("#d1").click(function(){
+				$(this).fadeOut(500);
+				$(this).fadeIn(1000);
+			})
+
+
+
+			var txt= $(".item2").text();
+			$(".item2").text(txt+"hello chuvella");
+		});
+
+	</script>
+
+	
+
+
+
+</body>
+</html>

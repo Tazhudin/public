@@ -1,0 +1,16 @@
+<?php
+
+$MESS['PUSH_NOTIFICATION_TESTING_SEND_TAB_TITLE'] = 'Push-уведомление';
+$MESS['PUSH_NOTIFICATION_TESTING_SEND_HEADER'] = 'Настройки тестового push-уведомления:';
+$MESS['PUSH_NOTIFICATION_TESTING_SEND_FOR_SITE'] = 'Отправить для сайта:';
+$MESS['PUSH_NOTIFICATION_TESTING_USER_ID'] = 'Id - пользователя:';
+$MESS['PUSH_NOTIFICATION_TESTING_SEND_TITLE'] = 'Заголовок:';
+$MESS['PUSH_NOTIFICATION_TESTING_SEND_TEXT'] = 'Текст:';
+$MESS['PUSH_NOTIFICATION_TESTING_SEND_IMAGE'] = 'Изображение:';
+$MESS['PUSH_NOTIFICATION_TESTING_SEND_ICON'] = 'Иконка:';
+$MESS['PUSH_NOTIFICATION_TESTING_SEND_JSON_DATA'] = 'Json для полезной нагрузки:';
+$MESS['PUSH_NOTIFICATION_TESTING_SEND_SEND'] = 'Отправить push';
+$MESS['PUSH_NOTIFICATION_TESTING_SEND_RESULT_HEADER'] = 'Результат отправки push-уведомления';
+$MESS['PUSH_NOTIFICATION_TESTING_SEND_RESULT_ERROR'] = 'Ошибки отправки push-уведомления:';
+$MESS['PUSH_NOTIFICATION_TESTING_SEND_RESULT_SUCCESS_REQUEST'] = 'Данные запроса к серверу сообщений:';
+$MESS['PUSH_NOTIFICATION_TESTING_SEND_RESULT_SUCCESS_RESPONSE'] = 'Ответ от сервера сообщений:';

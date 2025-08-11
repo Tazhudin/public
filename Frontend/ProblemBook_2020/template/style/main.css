@@ -1,0 +1,82 @@
+body{
+	margin:0;
+	padding: 0;
+	color: red;
+	background-color: #51305f;
+}
+.body{
+	background-color: #51305f;
+}
+.header{
+	background-color: #27106d;
+	border-bottom: 2px solid red;
+	color: red;
+}
+.account{
+	display: inline;
+    float: right;
+    position: relative;
+    left: 10px;
+    top: -30px;
+}
+.content{
+
+	height: auto;
+	min-height: 500px;
+
+}
+h2{
+	border-bottom: 1px dotted red;
+}
+h3{
+	border: 1px solid yellow;
+	color: green;
+	padding: 20px;
+}
+
+.tasks{
+	border-left:2px solid red; 
+	
+}
+.sort{
+	border-bottom: 1px solid red
+	padding-bottom: 3%;
+    display: inline;
+    width: auto;
+    padding-bottom: 10px;
+}
+.btn-success{
+	padding: 2%;
+}
+.task{
+	border: 1px solid grey;
+	padding: 10px;
+}
+.tasktext{
+	
+}
+hr{
+	padding: 2px;
+}
+#AdminCheck{
+	color: green;
+	border top:1px dotted green; 
+	border bottom:1px dotted green; 
+}
+#AdminEdit{
+	color: grey;
+
+}
+#addButton{
+	border-top:2px dotted red ;
+}
+.addTask{
+	margin-top: 20px;
+}
+h6{
+	color: #f7f7f7;
+}
+.footer{
+
+	background-color: #4c0808;
+}

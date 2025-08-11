@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<title></title>
+</head>
+<body>
+
+	<form>
+		<label for="sex1">мурской</label>
+		<input type="radio" name="sex" id="sex1" value="men"><br>
+		<label for="sex2">женский</label>
+		<input type="radio" name="sex" id="sex2" value="women"><br>
+
+		<span id="error_message"></span>
+	
+		<input type="button" id="btn1" value="ввести" onclick="valid">
+
+
+
+	</form>
+
+	<script type="text/javascript">
+		 
+		 function valid()
+		 {
+
+		 	
+		 	var span= $('input[name="sex"]:checked').val();
+		 	if (!span) {$('#error_message').html("выберите пол !!!")}
+		 	else alert(span);
+
+		 }
+
+
+	</script>
+
+	<style type="text/css">
+		body
+		{
+			background-color: yellow;
+		}
+	</style>
+
+</body>
+</html>

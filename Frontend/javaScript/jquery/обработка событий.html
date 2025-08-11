@@ -1,0 +1,110 @@
+
+
+ПРОСТЫЕ СПОСОБЫ РЕГИСТРАЦИИ СОБЫТИЯ
+		blur()­­­­­­­­­
+		focusin()
+		­­­­­­­mousedown()­­­­­
+		mouseup()
+		change()­­­­­­­
+		focusout()­­­­­­
+		mouseenter()­­­­
+		resize()
+		click()­­­­­­­­
+		keydown()­­­­­­­
+		mouseleave()­­­­
+		scroll()
+		dblclick()­­­­­
+		keypress()­­­­­­
+		mousemove()­­­­­
+		select()
+		error()­­­­­­­­
+		keyup()­­­­­­­­­
+		mouseout()­­­­­­
+		submit()
+		focus()­­­­­­­­
+		load()­­­­­­­­­­
+		mouseover()­­­­­
+		unload()
+
+СПЕЦИАЛЬНЫЕ СПОСОБЫ РЕГИСТРАЦИИ СОБЫТИЙ
+	hover(f,g)   //аналогичен двум последовательным вызовам методов mouseenter(f) и mouseleave(g)
+	
+	toggle(f,g,h), функция f() для обработки первого «click», g() –второго, h() –третьего
+
+
+ОБЪЕКТ EVENT В БИБЛИОТЕКУ JQUERY
+	Библиотека jQuery скрывает различия в реализациях брозеров, определяя собственный объект Event
+			свойства Event:
+				altKey­­­­­­­­­
+				ctrlKey­­­­­­­­­
+				newValue­­­­­­­­­
+				screenX
+				attrChange­
+				­­­­current
+				Target­­­
+				offsetX­
+				­­­­­­­­­screenY
+				attrName­­­­­­­detail
+				­­­­­­­­­­offsetY­­
+				­­­­­­­­shiftKey
+				bubbles­­­­
+				­­­­eventPhase­­­­­­
+				originalTarget­
+				­­srcElement
+				button­­­­­­­­
+				­fromElement­­­
+				­­pageX­­­­­­­­­­­­target
+				cancelable
+				­­­­­keyCode­­
+				­­­­­­­pageY
+				­­­­­­­­­­­­toElement
+				charCode­
+				­­­­­­layerX
+				­­­­­­­­­­prevValue­­­
+				­­­­­view
+				clientX­
+				­­­­­­­layerY
+				­­­­­­­­­­relatedNode
+				­­­­­­wheelDelta
+				clientY
+				­­­­­­­­metaKey
+				­­­­­­­­­relatedTarget
+				­­­­which
+			методы:
+				preventDefault()­­­­­­­­­­­­­­­
+				isDefaultPrevented()
+				stopPropagation()­­­­­­­­­­­­­­
+				isPropagationStopped()
+				stopImmediatePropagation()­­­­­
+				isImmediatePropagationStopped()
+
+ДОПОЛНИТЕЛЬНЫЕ СПОСОБЫ РЕГ-ИИ СОБЫТИЙ:
+	 bind() 
+	 	$('p').click(f) ==  $('p').bind('click',­f);
+	 one() //удаляется после первого вызова.
+
+УДАЛЕНИЕ ОБР-ОВ СОБЫТИЙ
+	unbind() 
+		//кроме соб. addEventListener() attachEvent(),также объявленные в атрибутах элементов
+		$('*').unbind();­//­Удал­ит­все­обр­аб­отч­ик­и­соб­ыт­ий­из­всех­элем­ент­ов!
+		
+		//­Удал­ить­все­обр­аб­отч­ик­и­соб­ыт­ий­mouseover­и­mouseout­во­всех­элем­ент­ах­<a>­
+		$('a').unbind("mouseover­mouseout");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+click()
+	//­Щелч­ок­на­люб­ом­элем­ент­е­<p>­окр­аш­ив­ае­т­его­фон­в­сер­ый­цвет
+	$("p").click(function()­{­$(this).css("background-color",­"gray");­});

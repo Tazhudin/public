@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>для задания стилей с JS</title>
+</head>
+<body>
+	<div>
+		<div>
+			<pre id="text1">
+					Чудесный жребий совершился:
+					Угас великий человек.
+					В неволе мрачной закатился
+					Наполеона грозный век.
+					Исчез властитель осужденный,
+					Могучий баловень побед,
+					И для изгнанника вселенной
+					Уже потомство настает.
+			</pre>
+		</div>
+	</div>
+	<form>
+		<input type="button" name="btn1" id="inpBtn1" value="изменить стиль текста">
+	</form>
+
+	<style type="text/css">
+		body
+		{
+			background-color:#00FA9A; 
+		}
+		#text1
+		{
+
+		}
+
+
+	</style>
+
+	<script type="text/javascript">
+		
+		var inpBtn1 =document.getElementById("inpBtn1");
+		inpBtn1.onclick=function()
+		{
+			var e=document.getElementById("text1");
+			e.setAttribute("color","black");//s­=­e.getAttribute("style");
+s			
+		}
+
+	</script>
+
+</body>
+</html>

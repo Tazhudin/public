@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jquery</title>
+	<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+<body>
+	<div class="quetions">
+		<div class="quetion1">
+			<div class="q">1-вопрос
+				<div class="a">ответ1 </div>
+			</div>
+			
+			
+		</div>
+		<div class="quetion2">
+			<div class="q">2-вопрос
+				<div class="a">ответ1 </div>
+			</div>
+			
+		</div>
+		<div class="quetion3">
+			<div class="q">3-вопрос			
+				<div class="a">ответ1 </div>
+			</div>
+
+		</div>
+		<div class="quetion4">
+			<div class="q">4-вопрос
+				<div class="a">ответ1 </div>
+			</div>
+			
+		</div>
+		<div class="quetion5">
+			<div class="q">5-вопрос
+				<div class="a">ответ1 </div>
+			</div>
+			
+		</div>
+
+	</div>
+
+	<style type="text/css">
+		body{
+			background-color: grey;
+		}
+		.quetions{
+			padding: 10px;
+			border: 2px solid red;
+		}
+		.q{
+			background-color: 	#FFDEAD;
+			padding: 5px;
+			border: 1px solid red;
+			margin: 5px;
+		}
+		.a{
+			border-top: 1px solid black;
+			display: none;
+			padding: 5px;
+			background-color: #DAA520;
+		}
+	</style>
+	<script type="text/javascript">
+		$('.q').click(function(){
+			var open;
+				
+					if ($(this).find('.a').is(':visible'))  {
+					$(this).find('.a').slideUp();
+				} else {
+					opev=$(this).find('.a');
+					$(this).find('.a').slideDown();
+				}
+
+
+
+		})	
+
+
+	</script>
+
+
+</body>
+</html>

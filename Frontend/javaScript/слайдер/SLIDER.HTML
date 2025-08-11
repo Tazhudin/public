@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>slider</title>
+</head>
+<body>
+
+	<div class="slider">
+		<div class="images">
+			<img src="1.jpg" style="" alt="">
+			<img src="2.jpg" alt="">
+			<img src="3.jpg" alt="">
+			<img src="4.jpg" alt="">
+			
+		</div>
+		<div class="buttons">
+			<input type="button" class="next" value="вперед">
+			<input type="button" class="back" value="назад">
+		</div>
+	</div>
+
+	<style type="text/css">
+		.slider .images img{
+			display: none;
+			
+			width: 50%;
+			height: 50%;
+			margin: auto;
+		}
+
+		.buttons  {
+			margin-left:39% ;
+		}
+
+	</style>
+	<script type="text/javascript">
+		var next = document.querySelector('.next');
+		var back = document.querySelector('.back');
+		var images = document.querySelectorAll('.slider .images img');	
+		var i=images.length-1;
+		images[i].style.display="block";
+		next.onclick=function () {
+			
+			images[i].style.display="none";
+			i++;
+			if (i>images.length-1) {
+				i=0;
+			}
+			console.log(images.length , i);
+			images[i].style.display="block";			
+		}
+		back.onclick=function () {
+			images[i].style.display="none";
+			i--;
+			if (i<0) {
+				i=images.length-1;
+			}
+			console.log(images.length , i);
+			images[i].style.display="block";
+		}
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> split</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+			var str = 'aaa bbb ccc';
+			document.write(str.substr(4, 3) + "<br>"); 		//substr(откуда отрезать, сколько отрезать)
+			document.write(str.substring(4, 7) + "<br>");		//substring(откуда отрезать, докуда отрезать)
+			document.write(str.slice(4, 7) + "<br>"); 		//slice(откуда отрезать, докуда отрезать)
+
+
+
+				var str = '2025-12-31';
+				var arr = str.split('-');
+				document.write( arr + "<br>");//получим массив ['2025', '12', '31']
+
+
+
+				var str3 = 'я учу javascript!';
+
+				var indexStart=0;
+				var indexEnd=0;
+				for (var i = 0; i < 5; i++) 
+				{
+					if((str3[i]=='у') && (str3[i+1]=='ч') && (str3[i+2]=='у'))
+					{
+						indexStart=i;
+						indexEnd=i+3;
+					}
+				}
+				
+			console.log(indexEnd);
+			document.write(str3.substr(indexStart,(indexEnd-indexStart)) + "<br>"); 		
+			document.write(str3.substring(indexStart, indexEnd) + "<br>");		
+			document.write(str3.slice(indexStart, indexEnd) + "<br>"); 		
+
+	</script>
+	
+</body>
+</html>

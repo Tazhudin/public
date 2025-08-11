@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+<body>
+<div class="divFor1">див 1</div>
+<div class="divFor2">див 2</div>
+<div id="forchange">for change</div>
+
+
+<style type="text/css">
+	body
+	{
+		background-color: yellow;
+	}	
+	.div_1
+	{
+		background-color: red;
+	}
+	.div_2
+	{
+		background-color: green;
+	}
+</style>
+
+<script type="text/javascript">
+
+	var d=0;
+	while(d!=1&&d!=2)
+	{
+		d=prompt("1-чтобы выбрать красный цвет, или 2 дл зеленного?");
+	}
+
+	$("#forchange").attr("class","div_"+d);
+
+	
+</script>
+</body>
+</html>

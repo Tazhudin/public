@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>форма для ввода</title>
+	
+</head>
+<body>
+
+	<form>
+		<div class="forForm">
+					<div class="forBorder">
+
+							<label for="fname1"> Введите<br> фамилию </label> <br>
+							<input name="fname1" type="text" id="fname1" placeholder="input your lastName"><br>
+
+							<label for="name1"> имя </label><br>
+							<input name="name1" type="text" id="name1" placeholder="input your firstName"><br>
+
+							<label for="oname1"> отчество </label><br>
+							<input name="oname1" type="text" id="oname1"><br>
+					</div>
+				<br>
+					<div class="forBorder">
+						<label for="sel">select your variant</label><br>
+							<SELECT name="sel" size="4" >
+								<OPTION>1-й вариант</OPTION>
+								<OPTION>2-й вариант</OPTION>
+								<OPTION>3-й вариант</OPTION>
+								<OPTION>4-й вариант</OPTION>
+							</SELECT>
+					</div>
+
+
+
+				<br>
+			<div class="forBorder">
+							<label for="radiobutton1">your favorit color ?</label><br>
+							<label><input type="radio" name="radiobutton1" value="red"> RED</label><br>
+							<label><input type="radio" name="radiobutton1" value="green"> GREEN</label><br>
+							<label><input type="radio" name="radiobutton1" value="blue"> BLUE</label><br>
+							<label><input type="radio" name="radiobutton1" value="pink"> PINK</label><br>
+							<label><input type="radio" name="radiobutton1" value="yellow"> YELLOW</label><br>
+							<label><input type="radio" name="radiobutton1" value="black"> BLACK</label><br>
+			</div>
+
+
+
+
+				<br>
+			<div class="forBorder">
+						<label for="chkbx">this is checkbox</label><br>
+						
+						<input type="checkbox" name="choose1" value="variant 1" checked  />1-й вариант<br>
+						<input type="checkbox" name="choose1" value="variant 2" />2-й вариант<br>
+						<input type="checkbox" name="choose1" value="variant 3" />3-й вариант<br>
+						<input type="checkbox" name="choose1" value="variant 4" />4-й вариант<br>
+						<input type="checkbox" name="choose1" value="variant 5" />5-й вариант<br>
+			</div>
+
+				<br>
+			<div class="forBorder ">
+				<label for="comment"></label>
+				<textarea name="comment" ­id="textaria"></textarea>
+
+			</div>		
+
+
+				<br>
+						<input type="button" name="button1" value="проверить!" id="inputDate">
+
+
+						<br>	<br>	<br>
+						<input type="button" name="button2" value="задать CSS" id="butDisp">
+		</div>
+	</form>
+
+
+
+
+		<p id="PP1">
+			текст для скрытия при клике!!!
+		</p>
+
+						<style type="text/css">
+							body 
+								{
+									text-shadow: 1px 1px 1px yellow, 0 0 1em black; 
+									background-color: yellow;
+								}
+							.forBorder
+								{
+									padding: 5px;
+									color: red;
+									border-top: : 2px dotted red;
+									border-bottom: 2px dotted red;
+								}
+
+							Form
+							{
+								border: 2px solid green;
+								margin: 5px;
+								padding: 5px;
+							}
+
+						</style>
+	<script src="сценарий JS для обработки формы1.js"></script>
+</body>
+</html>
