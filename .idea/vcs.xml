@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/TZ/api_auto_manufacture_model" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/TZ/bitrix_company_transport/bitrixdock" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/TZ/bitrix_vidjet/pristayovich/www" vcs="Git" />
+  </component>
+</project>

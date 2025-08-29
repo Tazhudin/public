@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Bitrix" isTestSource="false" packagePrefix="Dev05" />
+      <sourceFolder url="file://$MODULE_DIR$/Bitrix/Modules/evaluation.05/lib" isTestSource="false" packagePrefix="Evaluation_05" />
+      <sourceFolder url="file://$MODULE_DIR$/Bitrix/Modules/push.notifications/lib" isTestSource="false" packagePrefix="PushNotifications" />
+      <sourceFolder url="file://$MODULE_DIR$/Bitrix/Modules/recipes.05/lib" isTestSource="false" packagePrefix="Recipes_05" />
+      <sourceFolder url="file://$MODULE_DIR$/Laravel" isTestSource="false" packagePrefix="Api" />
+      <sourceFolder url="file://$MODULE_DIR$/Laravel" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Laravel/Modules/feedback/src" isTestSource="false" packagePrefix="Feedback" />
+      <sourceFolder url="file://$MODULE_DIR$/Laravel/Modules/notification/src" isTestSource="false" packagePrefix="Notification" />
+      <sourceFolder url="file://$MODULE_DIR$/TZ/api_auto_manufacture_model" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TZ/bitrix_company_transport/bitrixdock/www/bitrix/modules" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TZ/bitrix_vidjet/pristayovich/www/bitrix/modules" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TZ/bitrix_vidjet/pristayovich/www/bitrix/modules/cloudpayments.cloudpayment/install/sale_payment/sdk" isTestSource="false" packagePrefix="Cloudpayments" />
+      <sourceFolder url="file://$MODULE_DIR$/TZ/bitrix_vidjet/pristayovich/www/bitrix/modules/webprostor.smtp/classes" isTestSource="false" packagePrefix="PHPMailer" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
